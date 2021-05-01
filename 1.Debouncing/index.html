@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Debouncing</title>
+  </head>
+  <body>
+    <input type="text" id="autoCompleteText" />
+    <script>
+      var timeout;
+
+      document
+        .getElementById("autoCompleteText")
+        .addEventListener("keypress", function (event) {
+          if (timeout) {
+            clearTimeout(timeout);
+          }
+          let keyword = event.target.value + event.key;
+          timeout = setTimeout(() => {
+            search(keyword);
+            timeout = undefined;
+          }, 3000);
+        });
+
+      function search(keyword) {
+        console.log(keyword);
+      }
+    </script>
+  </body>
+</html>

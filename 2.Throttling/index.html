@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Throttling</title>
+  </head>
+  <body>
+    <input type="button" id="addToCart" value="Add To Cart" />
+    <div id="itemsCount"></div>
+    <script>
+      var timeout;
+      var itemsCount = 0;
+
+      document
+        .getElementById("addToCart")
+        .addEventListener("click", function (event) {
+          if (timeout) {
+            return;
+          }
+          addItemToCart();
+          timeout = setTimeout(() => {
+            timeout = undefined;
+          }, 3000);
+        });
+
+      function addItemToCart(keyword) {
+        itemsCount++;
+        document.getElementById("itemsCount").innerHTML = itemsCount;
+      }
+    </script>
+  </body>
+</html>
