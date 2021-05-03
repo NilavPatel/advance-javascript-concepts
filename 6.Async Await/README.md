@@ -1,4 +1,4 @@
-# Aysnc Await
+# Async Await
 
 ## Async
 
@@ -19,7 +19,7 @@ getMessage().then(
 );
 ```
 
-# Await
+## Await
 
 The keyword `await` before a function makes the function wait for a promise:
 
