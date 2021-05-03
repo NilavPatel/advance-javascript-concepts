@@ -5,3 +5,4 @@
 - Event Bubbling
 - Event Capturing
 - Defer
+- Async Await

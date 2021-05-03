@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Aysnc Await</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      async function setMessage() {
+        let promise = new Promise(function (myResolve, myReject) {
+          setTimeout(() => {
+            myResolve("Hello world");
+          }, 3000);
+        });
+        var message = await promise;
+        document.getElementById("div1").innerHTML = message;
+      }
+      setMessage();
+    </script>
+  </body>
+</html>
