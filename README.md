@@ -6,3 +6,4 @@
 - Event Capturing
 - Defer
 - Async Await
+- preventDefault vs stopPropagation vs stopImmediatePropagation
