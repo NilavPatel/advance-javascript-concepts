@@ -4,3 +4,4 @@
 - Throttling
 - Event Bubbling
 - Event Capturing
+- Defer
