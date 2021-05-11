@@ -7,3 +7,6 @@
 - Defer
 - Async Await
 - preventDefault vs stopPropagation vs stopImmediatePropagation
+- localStorage and sessionStorage and cookie
+- call apply bind
+- var vs let vs const
