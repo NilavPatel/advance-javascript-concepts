@@ -19,7 +19,7 @@ console.log(hello); // error: hello is not defined
 
 ## let
 
-`let` has block scope. So a variable declared in a block with let is only available for use within that block.
+`let` has block scope. So a variable declared in a block with let is only available for use within that { }.
 
 ```javascript
 if (true) {

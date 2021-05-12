@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Event Delegation</title>
+  </head>
+  <body>
+    <div id="menu">
+        <button data-action="save">Save</button>
+        <button data-action="load">Load</button>
+        <button data-action="search">Search</button>
+    </div>
+    </table>
+    <script>
+      document.getElementById("menu").addEventListener("click", function (e) {
+        if (e.target.tagName.toLowerCase() == "button") {
+          alert(e.target.dataset.action);
+        }
+      });
+    </script>
+  </body>
+</html>

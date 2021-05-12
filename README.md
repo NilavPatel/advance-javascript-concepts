@@ -10,3 +10,5 @@
 - localStorage and sessionStorage and cookie
 - call apply bind
 - var vs let vs const
+- Event delegation
+- Closure and Currying

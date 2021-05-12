@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Event Delegation</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="pane">
+        <h3>A</h3>
+        <p>AAAA</p>
+        <button class="remove-button">[x]</button>
+      </div>
+      <div class="pane">
+        <h3>B</h3>
+        <p>BBBB</p>
+        <button class="remove-button">[x]</button>
+      </div>
+      <div class="pane">
+        <h3>C</h3>
+        <p>CCCC</p>
+        <button class="remove-button">[x]</button>
+      </div>
+    </div>
+    <script>
+      container.onclick = function (event) {
+        if (event.target.className != "remove-button") return;
+        let pane = event.target.closest(".pane");
+        pane.remove();
+      };
+    </script>
+  </body>
+</html>
