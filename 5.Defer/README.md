@@ -33,3 +33,16 @@ The `defer` attribute tells the browser not to wait for the script. Instead, the
 <!-- visible to scirpt -->
 <p>...content after script...</p>
 ```
+
+# aysnc
+
+The `sync` attribute tells browser not to wait for script to load, once it is loaded then browser stops untill its execution and then continue HTML parsing.
+
+```html
+<p>...content before script...</p>
+
+<script async src="script.js"></script>
+
+<!-- visible to scirpt -->
+<p>...content after script...</p>
+```
