@@ -32,7 +32,8 @@ console.log(hello); // hello is not defined
 ## const
 
 `const` has block scope.
-Value can be assinged only once.
+Value can be assinged only once.  
+Must be assigned value on time of declaration.  
 
 ```javascript
 const greeting = "say Hi";
