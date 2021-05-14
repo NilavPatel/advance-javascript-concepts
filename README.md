@@ -12,3 +12,5 @@
 - var vs let vs const
 - Event delegation
 - Closure and Currying
+- Array Manipulation
+- Prototypes
