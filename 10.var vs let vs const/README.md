@@ -3,7 +3,8 @@
 ## var
 
 `var` are globally scoped or function/locally scoped.  
-`var` can be declared again.
+`var` can be declared again.  
+Value can be assigned at anytime within scope. initial value is undefined if no value is assigned on time of declaration.   
 
 ```javascript
 var tester = "hey hi";
@@ -19,7 +20,8 @@ console.log(hello); // error: hello is not defined
 
 ## let
 
-`let` has block scope. So a variable declared in a block with let is only available for use within that { }.
+`let` has block scope. So a variable declared in a block with let is only available for use within that { }.  
+Value can be assigned at anytime within scope. initial value is undefined if no value is assigned on time of declaration.   
 
 ```javascript
 if (true) {
@@ -31,7 +33,7 @@ console.log(hello); // hello is not defined
 
 ## const
 
-`const` has block scope.
+`const` has block scope.  
 Value can be assinged only once.  
 Must be assigned value on time of declaration.  
 
